@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="247.0" prefWidth="347.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.hotelmanagmentsystem.navigate">
+   <children>
+      <ToggleButton layoutX="246.0" layoutY="275.0" mnemonicParsing="false" text="ToggleButton" />
+      <ImageView fitHeight="523.0" fitWidth="710.0" layoutX="-10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1064770e58a0af953b49953b24ac4d06.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a16455" height="62.0" layoutX="246.0" layoutY="25.0" opacity="0.86" stroke="#3e180d" strokeType="INSIDE" style="-fx-arc-height: 60; -fx-arc-width: 60;" width="198.0" />
+      <Text layoutX="255.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reservationist" underline="true">
+         <font>
+            <Font name="Bookman Old Style" size="26.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color blue="0.1474853754043579" green="0.3053099513053894" red="0.410526305437088" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color blue="0.1474853754043579" green="0.3053099513053894" red="0.410526305437088" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color blue="0.0030409356113523245" green="0.02016374282538891" red="0.031578946858644485" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a16455" height="316.0" layoutX="132.0" layoutY="117.0" opacity="0.86" stroke="#3e180d" strokeType="INSIDE" style="-fx-arc-height: 60; -fx-arc-width: 60;" width="426.0" />
+      <Text fill="#3e180d" layoutX="156.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Show The List Of :" underline="true">
+         <font>
+            <Font name="Bookman Old Style Bold" size="15.0" />
+         </font>
+      </Text>
+      <RadioButton layoutX="157.0" layoutY="167.0" mnemonicParsing="false" text="Guests currently staying at the hotel" textFill="#3e180d" underline="true">
+         <font>
+            <Font name="Bookman Old Style Bold" size="12.0" />
+         </font>
+         <contextMenu>
+            <ContextMenu>
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+               </items>
+            </ContextMenu>
+         </contextMenu>
+         <toggleGroup>
+            <ToggleGroup fx:id="ToggleButton1" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="156.0" layoutY="196.0" mnemonicParsing="false" text="Guests have checked out of the hotel" textFill="#3e180d" toggleGroup="$ToggleButton1" underline="true">
+         <font>
+            <Font name="Bookman Old Style Bold" size="12.0" />
+         </font>
+         <contextMenu>
+            <ContextMenu>
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+               </items>
+            </ContextMenu>
+         </contextMenu>
+      </RadioButton>
+      <Label fx:id="reservationistlist" layoutX="142.0" layoutY="254.0" opacity="0.8" prefHeight="168.0" prefWidth="406.0" style="-fx-background-color: #dcc3b6; -fx-background-radius: 30px; -fx-border-radius: 30px; -fx-border-color: #3e180d;" textFill="#3e180d" underline="true">
+         <font>
+            <Font name="Bookman Old Style Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="601.0" layoutY="452.0" mnemonicParsing="false" onAction="#backToWelcome" style="-fx-background-color: #a16455; -fx-background-radius: 30px; -fx-border-radius: 30px; -fx-border-color: #3e180d;" text="BACK" underline="true">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color blue="0.1474853754043579" green="0.3053099513053894" red="0.410526305437088" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color blue="0.1474853754043579" green="0.3053099513053894" red="0.410526305437088" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9973082099596233">
+                     <color>
+                        <Color blue="0.0030409356113523245" green="0.02016374282538891" red="0.031578946858644485" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color blue="0.0030409356113523245" green="0.02016374282538891" red="0.031578946858644485" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <Button layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#toSettingPageRes" prefHeight="26.0" prefWidth="31.0" style="-fx-background-color: #a16455; -fx-background-radius: 30px; -fx-border-radius: 30px; -fx-border-color: #3e180d;" text="⚙" underline="true">
+         <font>
+            <Font name="Bookman Old Style" size="20.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color blue="0.1474853754043579" green="0.3053099513053894" red="0.410526305437088" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color blue="0.1474853754043579" green="0.3053099513053894" red="0.410526305437088" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9973082099596233">
+                     <color>
+                        <Color blue="0.0030409356113523245" green="0.02016374282538891" red="0.031578946858644485" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color blue="0.0030409356113523245" green="0.02016374282538891" red="0.031578946858644485" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <Button layoutX="610.0" layoutY="12.0" mnemonicParsing="false" onAction="#backToWelcome" prefHeight="26.0" prefWidth="76.0" style="-fx-background-color: #a16455; -fx-background-radius: 30px; -fx-border-radius: 30px; -fx-border-color: #3e180d;" text="Log out" underline="true">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color blue="0.1474853754043579" green="0.3053099513053894" red="0.410526305437088" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color blue="0.1474853754043579" green="0.3053099513053894" red="0.410526305437088" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9973082099596233">
+                     <color>
+                        <Color blue="0.0030409356113523245" green="0.02016374282538891" red="0.031578946858644485" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color blue="0.0030409356113523245" green="0.02016374282538891" red="0.031578946858644485" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <Button layoutX="268.0" layoutY="218.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="133.0" style="-fx-background-color: #a16455; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: #3e180d;" text="Show The List" textFill="#3e180d" underline="true">
+         <font>
+            <Font name="Bookman Old Style Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

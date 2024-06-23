@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="413.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.hotelmanagmentsystem.navigate">
+   <children>
+      <ImageView fitHeight="435.0" fitWidth="711.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Designer.png" />
+         </image>
+      </ImageView>
+      <Button contentDisplay="TOP" graphicTextGap="5.0" layoutX="294.0" layoutY="314.0" mnemonicParsing="false" onAction="#toLoginPage" prefHeight="40.0" prefWidth="138.0" style="-fx-background-color: #4B5320; -fx-background-radius: 30px; -fx-border-radius: 30px; -fx-border-color: #e4dacd;" text="LOG IN" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Bookman Old Style" size="20.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color blue="0.45157894492149353" green="0.6855263113975525" red="0.8526315689086914" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color blue="1.0" green="1.0" red="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button contentDisplay="TOP" graphicTextGap="6.0" layoutX="613.0" layoutY="359.0" mnemonicParsing="false" onAction="#exit" prefHeight="15.0" prefWidth="86.0" style="-fx-background-color: #4B5320; -fx-background-radius: 30px; -fx-border-radius: 30px; -fx-border-color: #e4dacd;" text="EXIT" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+         <textFill><LinearGradient endX="1.0" endY="1.0">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color blue="0.45157894492149353" green="0.6855263113975525" red="0.8526315689086914" />
+                  </color></Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color blue="0.7946978807449341" green="0.889896035194397" red="0.9578947424888611" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+         </textFill>
+      </Button>
+      <StackPane layoutX="17.0" layoutY="184.0" prefHeight="150.0" prefWidth="200.0" />
+      <Ellipse layoutX="361.0" layoutY="90.0" radiusX="129.0" radiusY="75.0" stroke="#3b290d" strokeType="INSIDE">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color blue="1.0" green="1.0" red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color blue="1.0" green="1.0" red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9919246298788693">
+                     <color>
+                        <Color blue="0.5080311894416809" green="0.7213287949562073" red="0.8736842274665833" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color blue="0.5112670660018921" green="0.8736842274665833" red="0.7951604723930359" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Ellipse>
+      <ImageView fitHeight="219.0" fitWidth="249.0" layoutX="254.0" layoutY="-35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG_20240615_184227_034.png" />
+         </image>
+         <effect>
+            <DropShadow height="21.3" radius="14.170000000000002" spread="0.45" width="37.38">
+               <input>
+                  <InnerShadow choke="0.27" height="23.49" radius="24.0875" width="74.86">
+                     <color>
+                        <Color blue="0.5371540188789368" green="0.7278544306755066" red="0.8736842274665833" />
+                     </color>
+                     <input>
+                        <ColorAdjust brightness="1.0" contrast="-1.0" hue="-0.17" saturation="-0.17">
+                           <input>
+                              <Lighting diffuseConstant="0.0" specularConstant="0.57" specularExponent="8.44" surfaceScale="0.0">
+                                 <bumpInput>
+                                    <Shadow height="15.36" radius="16.939999999999998" width="54.4">
+                                       <color>
+                                          <Color blue="0.9814814925193787" green="0.9919753074645996" red="1.0" />
+                                       </color>
+                                    </Shadow>
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color blue="0.9925925731658936" green="0.9962962865829468" red="1.0" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </input>
+                        </ColorAdjust>
+                     </input>
+                  </InnerShadow>
+               </input>
+               <color>
+                  <Color blue="0.025263158604502678" green="0.1894736886024475" red="0.17305263876914978" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <Text boundsType="VISUAL" cache="true" cacheHint="SPEED" fontSmoothingType="LCD" layoutX="299.0" layoutY="152.0" nodeOrientation="LEFT_TO_RIGHT" strokeDashOffset="5.0" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="MOTELLA" textOrigin="BOTTOM" underline="true" wrappingWidth="230.93597412109375">
+         <font>
+            <Font name="Bookman Old Style" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="MOVE" />
+         </cursor>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.45454546177025995" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color blue="0.3674074113368988" green="0.6526315808296204" red="0.6003404855728149" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color blue="0.0313725508749485" green="0.250980406999588" red="0.20392157137393951" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="60.0" layoutX="247.0" layoutY="184.0" opacity="0.9" stroke="#e4dacd" strokeType="INSIDE" style="-fx-arc-height: 80; -fx-arc-width: 80;" width="233.0">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color blue="0.29629629850387573" green="0.5263158082962036" red="0.4994801878929138" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color blue="0.10518518835306168" green="0.4000000059604645" red="0.3656049370765686" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Rectangle>
+      <Text layoutX="268.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME" underline="true">
+         <font>
+            <Font name="Bookman Old Style" size="35.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.45454546177025995" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color blue="0.8912280797958374" green="0.9239766001701355" red="0.9473684430122375" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color blue="0.9962962865829468" green="0.9982715845108032" red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color blue="0.6784313917160034" green="0.7882353067398071" red="0.8745098114013672" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Button graphicTextGap="5.0" layoutX="294.0" layoutY="259.0" mnemonicParsing="false" onAction="#toSignupPage" prefHeight="41.0" prefWidth="138.0" style="-fx-background-color: #4B5320; -fx-background-radius: 30px; -fx-border-radius: 30px; -fx-border-color: #e4dacd;" text="SIGN UP" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Bookman Old Style" size="20.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color blue="0.45157894492149353" green="0.6855263113975525" red="0.8526315689086914" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color blue="1.0" green="1.0" red="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+   </children>
+</AnchorPane>

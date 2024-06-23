@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="357.0" prefWidth="495.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.hotelmanagmentsystem.navigate">
+   <children>
+      <ToggleButton layoutX="198.0" layoutY="270.0" mnemonicParsing="false" text="ToggleButton">
+         <toggleGroup>
+            <ToggleGroup fx:id="ToggleGroup1" />
+         </toggleGroup>
+      </ToggleButton>
+      <ToggleButton layoutX="457.0" layoutY="270.0" mnemonicParsing="false" text="ToggleButton" />
+      <ImageView fitHeight="485.0" fitWidth="812.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@e162df7ab8515566f448544cc1dc5213.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d4a9b6" height="67.0" layoutX="311.0" layoutY="14.0" opacity="0.86" stroke="#3b0e2a" strokeType="INSIDE" style="-fx-arc-height: 60; -fx-arc-width: 60;" width="177.0" />
+      <Text layoutX="343.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin" underline="true" wrappingWidth="112.0068359375">
+         <font>
+            <Font name="Bookman Old Style" size="35.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color blue="0.7464977502822876" green="0.49044835567474365" red="0.8947368264198303" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color blue="0.7464977502822876" green="0.49044835567474365" red="0.8947368264198303" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color blue="0.10964912176132202" green="0.02631578966975212" red="0.15789473056793213" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d4a9b6" height="278.0" layoutX="183.0" layoutY="90.0" opacity="0.86" stroke="#3b0e2a" strokeType="INSIDE" style="-fx-arc-height: 60; -fx-arc-width: 60;" width="446.0" />
+      <Text fill="#3b0e2a" layoutX="303.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hotel Internal Setting">
+         <font>
+            <Font name="Bookman Old Style Bold" size="18.0" />
+         </font>
+      </Text>
+      <Line endX="136.20001220703125" endY="-1.52587890625E-5" layoutX="388.0" layoutY="121.0" startX="-100.0" stroke="#3b0e2a" strokeWidth="2.0" />
+      <Text fill="#3b0e2a" layoutX="337.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number Of Room" underline="true">
+         <font>
+            <Font name="Bookman Old Style Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#3b0e2a" layoutX="270.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Which Operation Do You Want To Do?" underline="true">
+         <font>
+            <Font name="Bookman Old Style Bold" size="14.0" />
+         </font>
+      </Text>
+      <Label fx:id="addroom" layoutX="258.0" layoutY="340.0" prefHeight="18.0" prefWidth="282.0" textFill="#3b0e2a" underline="true">
+         <font>
+            <Font name="Bookman Old Style Bold" size="13.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="271.0" layoutY="170.0" mnemonicParsing="false" text="Add_Room" textFill="#3b0e2a" underline="true">
+         <font>
+            <Font name="Bookman Old Style Bold" size="13.0" />
+         </font>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+         <toggleGroup>
+            <ToggleGroup fx:id="ToggleGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="410.0" layoutY="170.0" mnemonicParsing="false" text="Delete_Room" textFill="#3b0e2a" toggleGroup="$ToggleGroup" underline="true">
+         <font>
+            <Font name="Bookman Old Style Bold" size="13.0" />
+         </font>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </RadioButton>
+      <TextField layoutX="319.0" layoutY="308.0" prefHeight="32.0" prefWidth="159.0" style="-fx-background-color: #eae1e4; -fx-background-radius: 30px; -fx-border-radius: 30px; -fx-border-color: #3b0e2a;" />
+      <Line endX="-161.79998779296875" endY="8.20001220703125" layoutX="618.0" layoutY="317.0" opacity="0.8" startX="-279.39996337890625" startY="8.20001220703125" stroke="#3b0e2a" style="-fx-stroke-dash-array: 2 6; -fx-stroke-width: 2px;" />
+      <Button layoutX="346.0" layoutY="377.0" mnemonicParsing="false" onAction="#backToWelcome" prefHeight="50.0" prefWidth="120.0" style="-fx-background-color: #d4a9b6; -fx-background-radius: 30px; -fx-border-radius: 30px; -fx-border-color: #3b0e2a;" text="DONE">
+         <font>
+            <Font name="Bookman Old Style" size="25.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color blue="0.7464977502822876" green="0.49044835567474365" red="0.8947368264198303" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color blue="0.7464977502822876" green="0.49044835567474365" red="0.8947368264198303" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color blue="0.10964912176132202" green="0.02631578966975212" red="0.15789473056793213" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <Button layoutX="710.0" layoutY="402.0" mnemonicParsing="false" onAction="#backToWelcome" prefHeight="42.0" prefWidth="78.0" style="-fx-background-color: #d4a9b6; -fx-background-radius: 30px; -fx-border-radius: 30px; -fx-border-color: #3b0e2a;" text="BACK">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color blue="0.7464977502822876" green="0.49044835567474365" red="0.8947368264198303" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color blue="0.7464977502822876" green="0.49044835567474365" red="0.8947368264198303" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color blue="0.10964912176132202" green="0.02631578966975212" red="0.15789473056793213" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <Text fill="#3b0e2a" layoutX="347.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type Of Room" underline="true">
+         <font>
+            <Font name="Bookman Old Style Bold" size="14.0" />
+         </font>
+      </Text>
+      <RadioButton layoutX="257.0" layoutY="245.0" mnemonicParsing="false" text="Suite" textFill="#3b0e2a" toggleGroup="$ToggleGroup1" underline="true">
+         <font>
+            <Font name="Bookman Old Style Bold" size="13.0" />
+         </font>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </RadioButton>
+      <RadioButton layoutX="345.0" layoutY="245.0" mnemonicParsing="false" text="SingleRoom" textFill="#3b0e2a" toggleGroup="$ToggleGroup1" underline="true">
+         <font>
+            <Font name="Bookman Old Style Bold" size="13.0" />
+         </font>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </RadioButton>
+      <RadioButton layoutX="478.0" layoutY="245.0" mnemonicParsing="false" text="DoubleRoom" textFill="#3b0e2a" toggleGroup="$ToggleGroup1" underline="true">
+         <font>
+            <Font name="Bookman Old Style Bold" size="13.0" />
+         </font>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </RadioButton>
+   </children>
+</AnchorPane>
